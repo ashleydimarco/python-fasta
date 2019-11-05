@@ -1,3 +1,4 @@
+import sys
 
 def read_fasta(filename):
     sequence = ''
@@ -10,10 +11,10 @@ def read_fasta(filename):
     f.close()
     return sequence
 
-print(read_fasta('ae.fa'))
+print(read_fasta(sys.argv[1]))
 
 
-# In[ ]:
+
 
 
 
